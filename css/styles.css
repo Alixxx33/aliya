@@ -436,3 +436,8 @@ body {
     display: flex;
     gap: 10px; /* Abstand zwischen den Symbolen */
 }
+
+.donation-link.disabled {
+    pointer-events: none; /* Verhindert Klicks */
+    cursor: not-allowed; /* Zeigt einen "verbotenen" Cursor */
+}
