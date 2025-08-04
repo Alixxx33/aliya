@@ -441,3 +441,41 @@ body {
     pointer-events: none; /* Verhindert Klicks */
     cursor: not-allowed; /* Zeigt einen "verbotenen" Cursor */
 }
+
+/* YouTube Channel Preview Styling */
+.channel-preview-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(255, 0, 127, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+}
+
+.channel-preview-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff1493, 0 0 40px #ff1493;
+}
+
+.channel-link {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Optional: Lege zusätzliches Verhalten für Preview-Overlay fest, wenn Kanalbild verwendet wird */
+.youtube-preview .preview-overlay {
+    position: relative;
+    background: rgba(255, 192, 203, 0.9);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.youtube-preview:hover .preview-overlay {
+    background: rgba(255, 105, 180, 0.9);
+}
